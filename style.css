@@ -1,0 +1,812 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+img {
+    display: block ;
+    max-width: 100%;
+}
+
+ul,li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+h1,h2,h3,p,a,dd,dt{
+    color: white;
+    font-family: Roboto
+}
+
+.background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(/img/Céu.jpg);
+    background-size: auto 120%;
+    z-index: -1;
+}
+
+
+.background-black{
+    background-color: rgba(0, 0, 0, 0.851);
+    height: auto;
+    width: auto;
+    border-top: solid 1px #f3c85a;
+    border-bottom: solid 1px #f3c85a;
+    grid-column: 1/4;
+    position: relative;
+}
+
+/* .background-black::before{
+    content: "";
+    display: inline-block;
+    width: 1500px;
+    height: 2px;
+    left:60px;
+    background:#fff20084 ;
+    position:absolute;
+} */
+
+/* .background-cinza{
+    background-color: rgba(64, 63, 63, 0.851);
+    width: 900;
+    height: 400px;
+    z-index: -1;
+    border-top: solid 1px #f3c85a;
+    grid-column: 1/4;
+
+} */
+
+.background-footer{
+    background-color: #33333376;
+    grid-column: 1/4;
+    /* border-bottom: solid 1px #f3c85a; */
+}
+
+.flex-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center ;
+}
+
+/* MENU-RPG */
+
+.content{
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(3,1fr)
+}
+
+.menu{
+    grid-column: 1/4;
+    background: #000000eb;
+    border-bottom: solid 1px;
+    color: yellow;
+    display: grid; 
+}
+
+.menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px 15px;
+    justify-content: center; /* Alinhar os itens horizontalmente no centro */
+    align-items: center; /* Alinhar os itens verticalmente no centro */
+
+}
+
+.menu li a {
+    display: block;
+    margin: 20px;
+    padding-top: 15px;
+    font-family: roboto;
+    font-weight: bold;
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+    border-bottom: 3px solid rgba(0, 0, 0, 0);
+    transition: border-bottom 0.5s;
+    cursor: pointer;
+    justify-content: center; /* Alinhar os itens horizontalmente no centro */
+    align-items: center; /* Alinhar os itens verticalmente no centro */
+}
+
+.menu a:hover {
+    border-bottom: 3px solid #fff200;
+}
+
+.menu img {
+cursor: pointer;
+}
+
+.menu button{
+    padding-top: 13px;
+    margin: 20px;
+    font-family: roboto;
+    font-weight: bold;
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+    background: none;
+    cursor: pointer;
+    appearance: none;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    border-bottom: 3px solid rgba(0, 0, 0, 0);
+    transition: border-bottom 0.5s;
+}
+
+.menu button:hover {
+    border-bottom: 3px solid #fff200;
+}
+
+/* INICIO-FICHAS-AT: */
+
+
+.centro-grid{
+    grid-column: 2/3;
+    gap: 20px;
+    padding-top: 20px ;
+    padding-bottom: 50px;
+}
+
+
+.introducao img{
+    align-items: center;
+    padding-top: 50px;
+    padding-right: 15px;
+
+}
+
+.introducao p{
+    font-size: 1.9rem ;
+    text-align: center;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    margin: 10px;
+    font-weight: bold;
+    /* position: relative; */
+}
+
+/* .introducao p::before{
+    content: "";
+    display:block;
+    position: absolute
+    width: 60px;
+    height: 5px;
+    background:#fb5;
+    
+
+} */
+
+.introducao button{
+    padding: 10px 10px;
+    font-family: Roboto;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: #a32198;
+    cursor: pointer;
+    appearance: none;
+    border: none;
+    border-radius: 3px;
+    color: white;
+}
+
+.position-grid {
+    display: grid;
+    justify-items: center;
+    gap: 20px;
+}
+
+/* FICHAS-RPG'S: */
+
+.fichas {
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 1fr;
+    gap: 50px;
+    
+}
+
+.fichas-locais{
+    grid-column:2/3;
+}
+
+.fichas h1{
+    font-size: 2.4rem;
+    letter-spacing: 0.1rem;
+    gap: 10px;
+    margin-bottom: 25px;
+    position:relative;
+    text-align: center;
+}
+
+.fichas h1::before{
+    content: "";
+    display: inline-block;
+    width: 120px;
+    height: 5px;
+    top: 40px;
+    background:#fff200 ;
+    position:absolute;
+}
+
+.fichas h2{
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+    padding: 20px;
+    position: relative;
+}
+
+.detalhes-1::before{
+    content: "";
+    display: inline-block;
+    width: 60px;
+    height: 3px;
+    top: 43px;
+    background:#a12bd7 ;
+    position:absolute;
+}
+
+.detalhes-2::before{
+    content: "";
+    display: inline-block;
+    width: 70px;
+    height: 3px;
+    top: 43px;
+    background:#a12bd7 ;
+    position:absolute;
+}
+
+.fichas p{
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    padding: 5px;
+    line-height: 1.8;
+    text-align: center;
+}
+
+
+.grid-esquerda{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: center;
+}
+
+.grid-esquerda img {
+    width: 95%;
+    align-content: center;
+}
+
+
+.grid-direita{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    text-align: center;
+    display: grid;
+    justify-items: center;
+    gap: 10px;
+}
+
+.grid-direita input {
+    border: none;
+    width: 30px;
+    height: 20px;
+}
+
+/* .grid-direita input::-webkit-scrollbar{
+} */
+
+.dado{
+    width:35%;
+    cursor: pointer;
+}
+
+.sistemas{
+    grid-column: 1/4;
+    display: grid;
+    justify-content: center;
+    align-items: baseline;
+    grid-template-columns: 1.5fr 1.2fr 1.5fr;
+    text-align: center;
+    padding: 60px;
+}
+
+.sistemas h2{
+    font-size: 2.4rem;
+    letter-spacing: 0.1rem;
+    padding: 20px;
+    position: relative;
+}
+
+.sistemas h2::before{
+    content: "";
+    display: inline-block;
+    width: 173px;
+    height: 5px;
+    top: 60px;
+    background:#fff200 ;
+    position:absolute;
+    
+}
+
+.sistemas p{
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    padding: 5px;
+    line-height: 1.8;
+    text-align: center;
+
+}
+
+.sistemas-locais {
+    grid-column: 2/3;
+
+}
+
+
+.grid-direita2{
+    display: grid;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    text-align: center;
+    justify-items: center;
+    gap: 20px;
+}
+
+.grid-esquerda2{
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    justify-items:center;
+    align-items: baseline;
+    gap: 20px;
+}
+
+.sistemas-img{
+    cursor: pointer;
+   
+}
+
+.background-cinzado{
+    background-color: #80808040;
+    border: 2px solid #303030;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+
+/* ORDEM FICHA */
+
+.grid-ficha-ordem{
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    background-color: #80808040;
+    padding: 15px;
+    border: 2px solid #303030;
+    border-radius: 5px;
+    gap: 20px;
+    
+
+}
+.grid-ficha-informações{
+    font-size: 0.1rem;
+    grid-column: 1/3;
+    display: inline-block;
+}
+
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;   
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* .persoangem-center{
+    padding-top: 30px;
+    width:100%;
+} */
+
+#barra-de-vida-container{
+    grid-column: 2/2;
+    width: 350px;
+    height: 30px;
+    background-color: #000000;
+    border: 1px solid #000;
+    border-radius: 5px;
+    overflow: hidden;
+    /* VER O MAIS SOBRE O OVERFLOW */
+    margin-bottom: 20px;
+
+}
+
+#barra-de-vida{
+    padding: 5px;
+    height: 100%;
+    width: 100%;
+    background-color: #b10101;
+    transition: width 0.3s;
+}
+
+#barra-de-sanidade-container{
+    grid-column: 2/2;
+    width: 350px;
+    height: 30px;
+    background-color: #000000;
+    border: 1px solid #000;
+    border-radius: 5px;
+    overflow: hidden;
+    /* VER O MAIS SOBRE O OVERFLOW */
+    margin-bottom: 20px;
+}
+
+#barra-de-sanidade{
+    padding: 5px;
+    height: 100%;
+    width: 100%;
+    background-color: #010db1;
+    transition: width 0.3s;
+}
+
+#barra-de-esforco-container{
+
+    grid-column: 2/2;
+    width: 350px;
+    height: 30px;
+    background-color: #000000;
+    border: 1px solid #000;
+    border-radius: 5px;
+    overflow: hidden;
+    /* VER O MAIS SOBRE O OVERFLOW */
+    margin-bottom: 20px;
+}
+
+#barra-de-pe{
+    padding: 5px;
+    height: 100%;
+    width: 100%;
+    background-color: #bbb538;
+    transition: width 0.3s;
+}
+
+.button-style-bar{
+    background: none;
+    border: none;
+    color: #e0e0e0;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+/* .js-button-acrescentar{}
+
+.js-button-subtrair{} */
+
+.button-position-acrescentar{
+    text-align: end;
+    position: relative; 
+    padding-right: 20px;
+    /* width: 200px;
+    height: 22px; */
+}
+
+.button-position-acrescentar::before{
+    content: url("/img/keyboard-right-arrow-button-1_icon-icons.com_72690.svg");
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 175px;
+    height:20px;
+    cursor: pointer;
+}
+
+.button-position-subtrair{
+    text-align: start;
+    padding-left: 20px;
+    grid-row: 1/2;
+    position: relative;
+    width: 20px;
+    height: 22px;
+}
+
+.button-position-subtrair::before{
+    content: url("/img/keyboard-left-arrow-button_icon-icons.com_72692.svg");
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.font-numb-barras{
+    font-size: 1.1rem;
+    color: white;
+    letter-spacing: 0.1rem;
+    /* font-weight: bold; */
+}
+
+.atributos-ordem{
+    position: relative;
+    display: block;
+}
+
+.atributos-ordem img{
+    width: 85%;
+    height: auto;
+}
+
+
+.intelecto-ordem{
+    display: inline-block;
+    position: absolute;
+    font-size: 2.4rem;
+    color: white;
+    top: 28%;
+    right: 29%;
+    background-color: transparent;
+    border: none;
+    transition: box-shadow 0.3s ease;
+}
+
+
+/* .button-style-bar:hover .intelecto{
+    box-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px red, 0 0 40px red;
+} */
+
+.presenca-ordem{
+    position: absolute;
+    font-size: 2.4rem;
+    color: white;
+    bottom: 23%;
+    left: 20%;
+    border: none;
+    transition: box-shadow 0.3s ease;
+}
+
+.presenca:hover{
+    box-shadow: 0 0 20px 0 rgb(238, 255, 0);
+    
+}
+
+.agilidade-ordem{
+    position: absolute;
+    font-size: 2.4rem;
+    color: white;
+    top: 9%;
+    right: 55%;
+    border: none;
+    transition: box-shadow 0.3s ease;
+}
+
+/* .agilidade:hover{
+    box-shadow: 0 0 20px 0 rgb(238, 255, 0);
+    
+} */
+
+.forca-ordem{
+    position: absolute;
+    font-size: 2.4rem;
+    color: white;
+    top: 29%;
+    left: 13%;
+    border: none;
+    transition: box-shadow 0.3s ease;
+}
+
+/* .forca:hover{
+    box-shadow: 0 0 20px 0 rgb(238, 255, 0);
+    
+} */
+
+.vigor-ordem{
+    position: absolute;
+    font-size: 2.4rem;
+    color: white;
+    bottom: 23%;
+    right: 36%;
+    border: none;
+    transition: box-shadow 0.3s ease;
+}
+/* 
+.vigor:hover{
+    box-shadow: 0 0 20px 0 rgb(238, 255, 0);
+    
+} */
+
+
+/* TORMENTA-FICHA */
+
+.grid-ficha-tormenta{
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    background-color: #80808040;
+    border: 2px solid #303030;
+    padding: 15px;
+    border-radius: 5px;
+    gap: 15px;
+    
+}
+
+.tormenta-foto{
+    padding: 25px;
+    font-size: 2.4rem;
+}
+
+
+.atributos-torm{
+    position: relative;
+}
+.intelecto-torm{
+    position: absolute;
+    color:#000;
+    font-size: 2.4rem;
+    bottom: 24%;
+    left: 18%;
+}
+
+.sabedoria-torm{
+    position: absolute;
+    color:#000;
+    font-size: 2.4rem;
+    bottom: 24%;
+    left: 48%;
+}
+
+.destreza-torm{
+    position: absolute;
+    color:#000;
+    font-size: 2.4rem;
+    top: 18%;
+    left: 48%;
+}
+
+.forca-torm{
+    position: absolute;
+    color:#000;
+    font-size: 2.4rem;
+    top: 18%;
+    left: 18%;
+}
+
+.constituicao-torm{
+    position: absolute;
+    color:#000;
+    font-size: 2.4rem;
+    top: 18%;
+    right: 17%;
+}
+
+.carisma-torm{
+    position: absolute;
+    color:#000;
+    font-size: 2.4rem;
+    bottom: 24%;
+    right: 17%;
+}
+
+/* js-fichas */
+
+.js-fichas-hide{
+    display: none;
+}
+
+.js-fichas-hide .ativo{
+    display: block !important;
+}
+
+@keyframes mostrar-ficha{
+    from{
+        opacity: 0;
+        max-height: 0;
+    }
+    to{
+        opacity: 1;
+        max-width: 100px;
+    }
+}
+
+/* DUVIDAS-RPG */
+
+.duvidas {
+    display: grid;
+    grid-template-columns:1fr 1.5fr 1fr;
+    padding: 20px 40px;
+    position: relative;
+}
+
+.duvidas-grid-center{
+    grid-column: 2/3;
+    text-align: center;
+}
+
+.duvidas h3{
+    
+    font-size: 1.8rem;
+    text-align: center;
+    /* position: absolute; */
+    padding: 5px;
+}
+
+.duvidas h3::before{
+    content: "";
+    display: inline-block;
+    width: 110px;
+    height: 4px;
+    top: 55px;
+    background:#fff200;
+    position: absolute;
+}
+
+
+
+.duvidas dt{
+    font-size: 1.5rem;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+}
+
+.duvidas dt::after{
+    content: "⬎";
+    margin: 10px;
+}
+
+
+.duvidas dd{
+    font-size: 1.2rem;
+    padding: 10px;
+    text-align: center;
+}
+
+
+/* FOOTER-RPG */
+
+.grid-footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 20px;
+}
+
+.grid-footer-centro{
+    grid-column: 2/3;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    
+}
+
+.creditos-sistema{
+    margin: 10px;
+}
+
+.creditos-sistema p{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.creditos-sistema a{
+    font-size: 1.2rem;
+    text-decoration:underline;
+
+}
+
+.desenvolvedor{
+    font-size: 1.5rem;
+    text-align: center;
+    align-self: center;
+    
+}

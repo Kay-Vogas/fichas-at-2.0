@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Fichas AT-V2</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+        <div class="background"></div>
+        <div class="content">
+
+            <nav class="menu">
+                    <ul>
+                        <img src="/img/AT TOKENS logo.png" alt="" width="5%" href="/home/index.html">
+                        <li><a href="#fichas">Fichas</a></li>
+                        <li><a href="#sistemas">Sistemas</a></li>
+                        <li><a href="#duvidas">Dúvidas</a></li>
+                        <li><a href="#creditos">Créditos</a></li>    
+                        <li><button>Login</button></li> 
+                    </ul>
+            </nav>
+    
+            <section class="introducao centro-grid position-grid">
+                <img src="/img/AT TOKENS teste.png" alt="">
+                <p>Sistema para Otimização de suas Fichas.</p>
+                <!-- COLAR UM BOTAR PARA CRIAR A CONTA / FICHA -->
+                <button>Entrar</button>
+            </section>
+            
+            <!-- class="background-black" -->
+            <section class="fichas background-black"> 
+                <section id="fichas" class="fichas-locais">
+                    <h1>Fichas</h1>
+                    <p>O intuito desses modelos de fichas digitalizadas são o meio de automatização do processo de 
+                            criação e auxilío de atualização ao progresso dos personagens durante suas aventuras sem 
+                            dificuldades.
+                    </p>
+                </section>
+                <!-- LADO ESQUERDO / ESTILO DE FICHA TESTE DE DADOS -->
+                <section class="grid-esquerda">
+                    <h2 class="detalhes-1">Ficha <br>Exemplo:</h3>
+                    <div>
+                        <img src="/img/teste333333.png" alt="" >
+                    </div>
+                </section>
+                
+                <section class="grid-direita">
+                    <h2 class="detalhes-2">Dados:</h3>
+                    <img src="/img/pngegg.png" alt="Dado de 20 Lados" class="dado" >
+                    <p>Proeficiência<input type="number" id="proeficiencia" name="proeficiencia"></p>
+
+                </section>
+
+            </section>
+    
+   
+            
+            <section id="sistemas" class="sistemas" >
+                <section class="sistemas-locais" >
+                    <h2>Sistemas</h2>
+                    <p>Os sistemas bases por enquanto são esses:</p>
+                </section>
+                
+                <section class="grid-direita2">
+                    <img src="/img/op-logo.png" id="fichasSistemas" class=" sistemas-img grid-ficha-ordem" alt="ordem paranormal" width="55%">
+                    <div class="grid-ficha-ordem">
+                        <div class="grid-ficha-informações ">
+                            <p>Name: Apollo Dias</p>
+                            <p>NEX: 30%</p>
+                            <p>Class: Especialista | Trilha: Med. de Campo</p>
+                        </div>
+                    
+                        <div>
+                            <img src="/img/sYQsVp.png" class="apollo-center" alt="Apollo Dias">
+                        </div>
+                        
+                        <div class="flex">
+                            
+                            <div>
+                                <p><b>P.V</b></p>
+                                <div class="grid">
+                                    <button id="subtrair" class="button-style-bar button-position-subtrair">-1</button>
+                                    <button id="acrescentar" class="button-style-bar button-position-acrescentar">+1</button>                                    
+                                </div>
+                                <div id="barra-de-vida-container">
+                                    <div id="barra-de-vida"><span class="font-numb-barras"><span>37</span>/37</span></div>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <p><b>Sanidade</b></p>
+                                
+                                <div class="grid">
+                                    <button id="subtrair" class="button-style-bar button-position-subtrair">-1</button>
+                                    <button id="acrescentar" class="button-style-bar button-position-acrescentar">+1</button>
+                                </div>
+                                <div id="barra-de-sanidade-container">
+                                    <div id="barra-de-sanidade"><span class="font-numb-barras"><span>36</span>/36</span></div>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <p><b>P.E</b></p>
+                                <div class="grid">
+                                    <button id="subtrair" class="button-style-bar button-position-subtrair">-1</button>
+                                    <button id="acrescentar" class="button-style-bar button-position-acrescentar">+1</button>
+                                </div>
+                                <div id="barra-de-esforco-container">
+                                    <div id="barra-de-pe"><span class="font-numb-barras"><span>30</span>/30</span></div>
+                                </div>
+                            </div>
+                            <div class="atributos-ordem" >
+                                
+                                <img src="/img/AtributosImg-Pequeno-39bf3923.png"  alt="">
+                                <button class="button-style-bar"><span class="intelecto-ordem">3</span></button>
+                                <button class="button-style-bar"><span class="presenca-ordem">2</span></button>
+                                <button class="button-style-bar"><span class="agilidade-ordem">2</span></button>
+                                <button class="button-style-bar"><span class="forca-ordem">2</span></button>
+                                <button class="button-style-bar"><span class="vigor-ordem">1</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="grid-esquerda2">
+                    <img src="/img/Logo-Tormenta-Flat-V_Prancheta-1.png" class="grid-ficha-tormenta sistemas-img tormenta-foto" alt="tormeta" width="55%">
+                    <div class="grid-ficha-tormenta ">
+                        <div class="grid-ficha-informações">
+                            <p>Name: CRUD</p>
+                            <p>LVL: 8</p>
+                            <p>Class: Lutador 2 & Feiticeiro 6 | Raça: Golem</p>
+                        </div>
+                    
+                        <div>
+                            <img src="/img/testeimage.png" class="persoangem-center" alt="CRUD">
+                        </div>
+                        
+                        <div class="flex">
+                            
+                            <div>
+                                <p><b>P.V</b></p>
+                                <div class="grid">
+                                    <button id="subtrair" class="button-style-bar button-position-subtrair">-1</button>
+                                    <button id="acrescentar" class="button-style-bar button-position-acrescentar">+1</button>                                    
+                                </div>
+                                <div id="barra-de-vida-container">
+                                    <div id="barra-de-vida"><span class="font-numb-barras"><span>60</span>/60</span></div>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <p><b>P.M</b></p>
+                                
+                                <div class="grid">
+                                    <button id="subtrair" class="button-style-bar button-position-subtrair">-1</button>
+                                    <button id="acrescentar" class="button-style-bar button-position-acrescentar">+1</button>
+                                </div>
+                                <div id="barra-de-sanidade-container">
+                                    <div id="barra-de-sanidade"><span class="font-numb-barras"><span>42</span>/42</span></div>
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="atributos-torm" >
+                                
+                                <img src="/img/atri-tormenta-20.png"  alt="">
+                                
+                                
+
+                                <button class="button-style-bar"><span class="intelecto-torm">2</span></button>
+                                <button class="button-style-bar"><span class="sabedoria-torm">1</span></button>
+                                <button class="button-style-bar"><span class="destreza-torm">0</span></button>
+                                <button class="button-style-bar"><span class="forca-torm">4</span></button>
+                                <button class="button-style-bar"><span class="constituicao-torm">3</span></button>
+                                <button class="button-style-bar"><span class="carisma-torm">4</span></button>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                
+                </section>
+            </section>
+            
+            <div>
+
+            </div>
+
+            <section id="duvidas " class="background-black">
+                <div class="duvidas">
+                    <div class="duvidas-grid-center">
+                        <h3>Dúvidas:</h3>
+                        <dl>          
+                            <div>
+                                <dt>O que seria um RPG de Mesa?</dt> 
+                                <dd>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum modi animi error commodi. Commodi dolorem beatae vel id ab excepturi est repellendus fuga porro consequatur, non ipsum nihil quibusdam? Placeat.</dd>
+                            </div>
+                            <div>
+                                <dt>O queria um Sistema Do RPG?</dt>
+                                <dd>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi eius praesentium vero in, placeat quia commodi dolore porro dolorum sequi doloremque magnam architecto voluptatibus ea eligendi illum nulla iusto cumque?</dd>
+                            </div>
+                            <div>
+                                <dt>É preciso do Livro para fazer a ficha?</dt>
+                                <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, minima alias praesentium perspiciatis assumenda voluptatum tempora aperiam nobis architecto ipsa nam? Beatae dolor neque eligendi officiis nam quos accusantium autem.</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+                
+            </section>
+    
+            <footer id="creditos" class=" background-footer grid-footer">
+                <div class="grid-footer-centro">
+                    <div class="creditos-sistema">
+                        <p>Créditos dos Sistemas Utilizados:</p>
+                        
+                        <a href="https://jamboeditora.com.br/produto/ordem-paranormal-rpg/">ORDEM PARANORMAL</a><br>
+                        <a href="https://jamboeditora.com.br/produto/tormenta20-edicao-jogo-do-ano/">TORMENTA 20</a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="desenvolvedor">
+                    <p>Desenvolvido por *<b>Kay</b>*</p>
+                    <div class="flex-wrap">
+                        <a href="https://www.instagram.com/kaykevg/"><img src="/img/icons8-instagram-50.png" alt=""></a>
+                        <a href="https://x.com/VgKayke"><img src="/img/icons8-twitter-squared-50.png" alt=""></a>
+                        <a href="https://github.com/Kay-Vogas"><img src="/img/icons8-github-50.png" alt=""></a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+<script src="/home/script.js"></script>
+        
+        
+</body>
+</html>
